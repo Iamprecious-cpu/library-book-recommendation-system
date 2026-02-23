@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400|Source+Sans+Pro:200,400,600');
+:root {
+  
+    --font-family-sans-serif: 'Source Sans pro',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --gray-dark: #404040;
+    --light-blue:black;
+    --light-purple: #485ced;
+    --purple: #6764c6;
+    --secondary: #6c757d;
+
+
+    /* Page Variables */
+    --font-family-serif: Merriweather, serif; 
+    --color-text: var(--gray-dark);
+    --font-family-text: var(--font-family-serif);
+
+
+
+
+}
+
+.family-sans {
+    font-family: var(--font-family-sans-serif);
+}
+
+.animated{
+    visibility: visible !important;
+}
+
+.site-header .animated {
+    animation-delay: 0.2s;
+    animation-duration: 0.1s;
+}
+
+body
+{
+    font-family: var(--font-family-text);
+    color: var(--color-text);
+    font-weight: 200;
+}
+
+
+.site-header {
+    background: url(../images/hero.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-nav .inbody {
+  
+    background: bg-secondary;
+
+  }
+
+
+.site-header .layout-hero {
+
+   min-height: 50vh;
+  
+
+}
+.navbar-logo {
+    height: 50px;
+    width: auto;
+  }
+  
+
+@media screen and (max-width: 768px) {
+
+   .site-header .navbar-collapse {
+       background-color:  rgba(0,0,0,0.9);
+       padding: 10px; 
+   }
+
+}
+
+.site-header .page-section-title {
+
+    font-size: 3 em;
+    font-family : var(--font-family-sans-serif);
+    font-weight: 200;
+
+
+}
+
+
+
+.site-header .page-section-text {
+
+    font-size: 1.2 em;
+    
+
+
+}
+
+.site-header .nav-link {
+    position: relative;
+    padding-bottom: 0 ;
+    margin-bottom: 2px;
+
+}
+
+.site-header .nav-link:before {
+
+    content: '';
+    position: absolute;
+    width: 100% ;
+    max-width: 100px;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--yellow);
+    transform: scaleX(0);
+    visibility: hidden;
+    transition: all 0.3s ease-out ;
+
+}
+
+.site-header .nav-link:hover:before {
+
+     visibility: visible;
+     left: 0;
+     transform: scaleX(1);
+
+}
+
+
+#page-multicolumn {
+    background: var(--light-blue);
+}
+
+
+.layout-multicolumn .layout-image {
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+.layout-multicolumn .layout-image:hover {
+
+    transform: scale(1.1) translate(-3px);
+
+
+}
+
+
+
+
+.page-section-header .page-section-title {
+    font-size: 4em;
+    font-family : var(--font-family-sans-serif);
+    font-weight: 200;
+    color: var(--purple);
+
+}
+
+.page-section-header .page-section-text{
+    font-size: 1.2em;
+    font-weight: 200;
+ 
+}
+
+
+.layout-media .layout-image {
+    max-width: 200px;
+}
+
+.layout-media .layout-title {
+    color: var(--purple);
+    font-family: var(--font-family-sans-serif);
+    font-weight: 200 ;
+    font-size: 1.6em;
+}
+
+
+.layout-photogrid .layout-image {
+
+ background: var(--light-blue);
+
+}
+
+#page-carousel {
+    background: var(--light-purple)
+}
+
+.layout-social .layout-icon {
+
+ font-size: 2em;
+
+
+}
+
+.layout-text {
+    font-size: 1.1 em;
+}
+
+.layout-nested .layout-title {
+    color: var(--purple);
+    font-family: var(--font-family-sans-serif);
+    font-size: 2em;
+}
+
+
+
+#page-floater {
+
+    background: var(--light-blue);
+
+}
+
+@media screen and (min-width: 768px) {
+   
+    #page-floater {
+        margin: 150px 0 150px 0 ;
+    }
+
+
+    .layout-floater .layout-container {
+        position: relative ;
+    }
+
+    .layout-floater .layout-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        transform: translate(-50%, -50%) rotate(15deg) scale(1.2);
+        
+  }
+
+ 
+
+    
+}
