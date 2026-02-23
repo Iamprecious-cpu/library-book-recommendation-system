@@ -12,7 +12,7 @@ import numpy as np
 from numpy import int64
 
 import requests
-import IPython.display as Disp
+
 
 import sklearn
 from sklearn.decomposition import TruncatedSVD
