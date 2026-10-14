@@ -123,7 +123,7 @@ Search: [book title]
  
 - No real student borrowing history; ratings come from external sources
 - Limited to the Computer Science departmental collection
-- Internet access required [explain why, or remove this line]
+- Internet access required
 ## Future Improvements
  
 - Integrate a real borrowing and rating system
